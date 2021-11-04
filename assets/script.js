@@ -15,19 +15,22 @@ document.getElementById('credit').textContent = `Created by ${yourName}`
 // Event listener for clicks on the "+" button for Gingerbread cookies
 document.getElementById('add-gb').addEventListener('click', function() { gb = gb + 1
     document.getElementById('qty-gb').innerHTML = gb
+    document.getElementById('qty-total').innerHTML = gb + cc + sugar
 })
 document.getElementById(`minus-gb`).addEventListener(`click`, function() { gb = gb - 1
     document.getElementById('qty-gb').innerHTML = gb
+    document.getElementById('qty-total').innerHTML = gb + cc + sugar
 })
 document.getElementById(`add-cc`).addEventListener(`click`, function() { cc = cc + 1
     document.getElementById('qty-cc').innerHTML = cc
+    document.getElementById('qty-total').innerHTML = gb + cc + sugar
 })
 document.getElementById(`minus-cc`).addElementListener(`click`, function(){ cc = cc - 1
     document.getElementById('qty-cc').innerHTML = cc
+    document.getElementById('qty-total').innerHTML = gb + cc + sugar
 })
   
-document.getElementById('qty-total').innerHTML = gb + cc + sugar
-    
+  
     // TODO: Write the code to be run when the "+" button for "Gingerbread" is clicked
 
 
